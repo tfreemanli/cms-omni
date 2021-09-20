@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_dealer" value="name:iID;datatype:int,name:cName;datatype:string,name:cAdd;datatype:string" />
+	<infoitem key="UD_rs" value="name:iID;datatype:int,name:dtDate;datatype:date,name:iDID;datatype:int,name:cName;datatype:string,name:cAdd;datatype:string,name:cItemQty;datatype:string" />
+	<infoitem key="UD_detail" value="name:iID;datatype:int,name:iDoID;datatype:int,name:cJN;datatype:string,name:cMake;datatype:string,name:cModel;datatype:string,name:cIMEI;datatype:string,name:fSrvChg;datatype:real" />
+</info>

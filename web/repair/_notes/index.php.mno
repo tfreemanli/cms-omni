@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_ag" value="name:iID;datatype:int,name:cJN;datatype:string,name:cAuthType;datatype:string,name:cAuth;datatype:string,name:cAuthContact;datatype:string,name:dtDate;datatype:datetime,name:cTitle;datatype:string,name:cContent;datatype:blob,name:cIsRead;datatype:string" />
+</info>

@@ -1,0 +1,117 @@
+body{
+	color:#333333;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	line-height: 11px;
+	margin: 0px;
+	background-color: #FFFFFF;
+}
+table{
+	color:#333333;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	line-height: 11px;
+}
+
+.ipt_normal {
+	width: 150px;
+	border: 1px solid #999999;
+}
+.font_white_9 {
+	font-size: 9px;
+	color: #FFFFFF;
+}
+
+.head_white_bold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+a:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#CC0033;
+	text-decoration: underline;
+}
+a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #CC0033;
+	text-decoration: none;
+}
+a:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #CC0033;
+}
+.font_white_9bold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.font_red_12 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #3E3E3E;
+}
+.text_normal {
+	height: 200px;
+	width: 100%;
+}
+.Mgr_Heading{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #3e3e3e;
+	line-height: 14px;
+}
+.Mgr_Heading:link{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #3e3e3e;
+	line-height: 14px;
+	text-decoration: none;
+}
+.Mgr_Heading:hover{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #3e3e3e;
+	line-height: 14px;
+	text-decoration: none;
+}
+.Mgr_Heading:visited{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #3e3e3e;
+	line-height: 14px;
+	text-decoration: none;
+}
+.right_solid_1 {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #e3e3e3;
+}
+.right_solid_2 {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CADB2A;
+}
+.btn {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	background-color: #CADB2A;
+	border: 1px solid #666666;
+}
+.underline {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #333333;
+}
+.td_block {
+	font-weight: bold;
+	background-color: #CADB2A;
+	border: 1px solid #404041;
+}

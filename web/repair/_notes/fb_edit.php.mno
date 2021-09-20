@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rs" value="name:id;datatype:int,name:desc;datatype:blob,name:status;datatype:string,name:date;datatype:date" />
+</info>

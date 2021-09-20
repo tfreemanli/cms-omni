@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_ph" value="name:iID;datatype:int,name:iShowIndex;datatype:int,name:cBrand;datatype:string,name:cModel;datatype:string,name:cFeature;datatype:blob,name:cImg;datatype:string" />
+	<infoitem key="UD_news" value="name:iID;datatype:int,name:iShowIndex;datatype:int,name:cPC;datatype:string,name:cDesc;datatype:blob,name:cImg;datatype:string" />
+	<infoitem key="UD_sp" value="name:iID;datatype:int,name:iShowIndex;datatype:int,name:cPC;datatype:string,name:cDesc;datatype:blob,name:cImg;datatype:string" />
+	<infoitem key="UD_fb" value="name:id;datatype:int,name:name;datatype:string,name:desc;datatype:blob,name:status;datatype:string,name:date;datatype:date" />
+</info>

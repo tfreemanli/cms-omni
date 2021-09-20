@@ -1,0 +1,235 @@
+body{
+	color:#000000;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px; /*11*/
+	line-height: 12px; /*12*/
+	margin: 0px;
+}
+.welcome_body{
+	background-color:#e1e2e3;
+	background-image:url(images/welcome_bg.gif);
+	background-repeat:repeat-x;
+	margin:0px;
+	font-family:Tahoma, Verdana, Arial;
+	font-size:14px; /*11*/
+	line-height:16px; /*12*/
+}
+.welcome_topbar{
+	background-color:#d5d7d8;
+}
+.welcome_font1{
+	color:#7e7d7f;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	line-height: 12px;
+}
+td{
+	color:#000000;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 14px; /*11*/
+	line-height: 16px; /*12*/
+}
+
+.PhImg {
+	border: 1px solid #F26522;
+}
+.ipt_sch {
+	height: 15px;
+	width: 100px;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 9px;
+	color: #990000;
+	border: 1px solid #999999;
+}
+.ipt_login {
+	height: 12px;
+	width: 70px;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 9px;
+	color: #3E3E3E;
+	border: 1px solid #999999;
+}
+.STYLE1 {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 9px;
+	color: #FFFFFF;
+}
+.sm_black {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 9px;
+	color: #000000;
+}
+.head_white_bold {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.head_black_bold {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+.head_red_bold {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #F26522;
+}
+.btn_sch {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 9px;
+	color: #FFFFFF;
+	background-color: #990000;
+	border: 1px solid #666666;
+}
+.a1:link{
+	font-family: Tahoma, Verdana, Arial;
+	color: #F1F1F1;
+	text-decoration: underline;
+}
+.a1:hover{
+	font-family: Tahoma, Verdana, Arial;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.a1:visited{
+	font-family: Tahoma, Verdana, Arial;
+	color: #F1F1F1;
+}
+a:link{
+	font-family: Tahoma, Verdana, Arial;
+	color: #F26522;
+	text-decoration: none;
+}
+a:hover{
+	font-family: Tahoma, Verdana, Arial;
+	color: #F26522;
+	text-decoration: none;
+}
+a:visited{
+	font-family: Tahoma, Verdana, Arial;
+	color:#F26522;
+	text-decoration: none;
+}
+.a2:link{
+	font-family: Tahoma, Verdana, Arial;
+	color: #7e7d7f;
+	text-decoration: none;
+}
+.a2:hover{
+	font-family: Tahoma, Verdana, Arial;
+	/*color: #FFFFFF;*/
+	text-decoration: none;
+}
+.a2:visited{
+	font-family: Tahoma, Verdana, Arial;
+	color: #7e7d7f;
+	text-decoration: none;
+}
+.a3:link{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.a3:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.a3:visited{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.underline {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #333333;
+}
+.ipt_srf {
+
+	height: 16px;
+	width: 100%;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 10px;
+	color: #3E3E3E;
+	border: 1px solid #999999;
+}
+.ipt_rtp {
+	width: 60px;
+	height: 12px;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 9px;
+	color: #990000;
+	border: 1px solid #999999;
+}
+.right_solid_1 {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #6E6E6E;
+	padding: 3px;
+}
+.down_solid_1 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #6E6E6E;
+}
+.com_menu_normal{
+	background-image:url(images/idx_com_menubg1.gif);
+	background-repeat:repeat-x;
+	background-color:#fdbe16;
+	color:#FFF;
+	font-size:17px;
+	font-weight:bold;
+	font-family: Tahoma, Verdana, Arial;
+	vertical-align:middle;
+	text-align:center;
+}
+.com_menu_gap{
+	background-image:url(images/idx_com_menugap1.gif);
+	background-repeat:repeat-x;
+	background-color:#f69220;
+	height:44px;
+}
+.com_menu_current{
+	background-image:url(images/idx_com_menubg2.gif);
+	background-repeat: no-repeat;
+	background-color:#fdbe16;
+	color:#000;
+	font-size:17px;
+	font-weight:bold;
+	font-family: Tahoma, Verdana, Arial;
+	text-align:center;
+	vertical-align:middle;
+}
+.com_midnav{
+	background-image:url(images/idx_com_midnavbg.gif);
+	background-repeat:repeat-y;
+	background-color:#f7ab9a;
+	height:29px;
+}
+.com_idx_box{
+	background-color:#efeff0;
+	border-left: 1px;
+	border-left-color:#adaeaf;
+	border-left-style:solid;
+	border-right: 1px;
+	border-right-color:#adaeaf;
+	border-right-style:solid;
+	font-size:12px;
+	line-height:14px;
+	padding:5px;
+}
+.com_idx_box_img{
+	width:235px;
+	background-color:#FFF;
+	border-left: 1px;
+	border-left-color:#adaeaf;
+	border-left-style:solid;
+	border-right: 1px;
+	border-right-color:#adaeaf;
+	border-right-style:solid;
+}

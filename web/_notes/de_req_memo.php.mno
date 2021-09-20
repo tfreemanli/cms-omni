@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rs" value="name:cJN;datatype:string,name:cMemo;datatype:blob,name:cMemoReply;datatype:blob" />
+</info>

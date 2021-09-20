@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rs" value="name:iID;datatype:int,name:cStatus;datatype:string,name:cName;datatype:string,name:cLastName;datatype:string,name:cHomePhn;datatype:string,name:cWorkPhn;datatype:string,name:cEmail;datatype:string,name:cFax;datatype:string,name:cAdd1;datatype:string,name:cAdd2;datatype:string,name:cAdd3;datatype:string,name:cIsVIP;datatype:string,name:cVIPNum;datatype:string,name:cVIPVDate;datatype:string,name:cVIPEDate;datatype:string,name:cSbmBy;datatype:string,name:cMake;datatype:string,name:cModel;datatype:string,name:cIMEI;datatype:string" />
+</info>

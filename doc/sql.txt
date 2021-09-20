@@ -1,0 +1,540 @@
+-- phpMyAdmin SQL Dump
+-- version 2.6.4-pl1
+-- http://www.phpmyadmin.net
+-- 
+-- 主机: localhost
+-- 生成日期: 2008 年 10 月 25 日 21:45
+-- 服务器版本: 4.1.18
+-- PHP 版本: 4.3.10
+-- 
+-- 数据库: `omnitech_co_nz_-_dbomni`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tb_cntr`
+-- 
+
+CREATE TABLE `tb_cntr` (
+  `iID` int(4) NOT NULL auto_increment,
+  `iCnt` int(4) NOT NULL default '0',
+  PRIMARY KEY  (`iID`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbagentnote`
+-- 
+
+CREATE TABLE `tbagentnote` (
+  `iID` int(4) unsigned NOT NULL auto_increment,
+  `cYear` varchar(4) NOT NULL default '',
+  `cMonth` char(2) NOT NULL default '',
+  `cAgentID` int(4) NOT NULL default '0',
+  `IsPaid` varchar(16) default NULL,
+  `cNote` text,
+  PRIMARY KEY  (`iID`),
+  UNIQUE KEY `cYear` (`cYear`,`cMonth`,`cAgentID`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbanm`
+-- 
+
+CREATE TABLE `tbanm` (
+  `iID` int(4) NOT NULL auto_increment,
+  `iShowIndex` tinyint(1) NOT NULL default '0',
+  `iAorM` int(2) NOT NULL default '0',
+  `cPC` varchar(64) NOT NULL default '',
+  `cDesc` text NOT NULL,
+  `cBrand` varchar(32) NOT NULL default '',
+  `cType` varchar(32) NOT NULL default '',
+  `cModel` varchar(32) NOT NULL default '',
+  `cPrice1` varchar(32) NOT NULL default '',
+  `cPrice2` varchar(32) NOT NULL default '',
+  `cWrty` varchar(32) NOT NULL default '',
+  `cInStk` varchar(32) NOT NULL default '',
+  `cImg` varchar(32) NOT NULL default '',
+  `dtDate` date default '0000-00-00',
+  PRIMARY KEY  (`iID`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbcart`
+-- 
+
+CREATE TABLE `tbcart` (
+  `iID` int(4) NOT NULL auto_increment,
+  `cRef` varchar(16) NOT NULL default '',
+  `dtDate` date NOT NULL default '0000-00-00',
+  `fPrice` float NOT NULL default '0',
+  `cFName` varchar(32) NOT NULL default '',
+  `cLName` varchar(32) NOT NULL default '',
+  `cAdd` varchar(128) NOT NULL default '',
+  `cContact` varchar(128) NOT NULL default '',
+  `cEmail` varchar(128) NOT NULL default '',
+  `iCB` float NOT NULL default '0',
+  PRIMARY KEY  (`iID`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbcartitems`
+-- 
+
+CREATE TABLE `tbcartitems` (
+  `iID` int(4) NOT NULL auto_increment,
+  `cRef` varchar(16) NOT NULL default '',
+  `cType` varchar(8) NOT NULL default '',
+  `iPID` int(4) NOT NULL default '0',
+  `cModel` varchar(32) NOT NULL default '',
+  `cImg` varchar(32) NOT NULL default '',
+  `cPrice` varchar(32) NOT NULL default '',
+  `iQty` int(4) NOT NULL default '0',
+  PRIMARY KEY  (`iID`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbcust`
+-- 
+
+CREATE TABLE `tbcust` (
+  `iID` int(4) unsigned NOT NULL auto_increment,
+  `cStatus` varchar(32) NOT NULL default 'normal',
+  `cName` varchar(64) NOT NULL default '',
+  `cLastName` varchar(64) default NULL,
+  `cPasswd` varchar(16) NOT NULL default '1234',
+  `cHomePhn` varchar(64) default NULL,
+  `cWorkPhn` varchar(64) default NULL,
+  `cEmail` varchar(64) default NULL,
+  `cFax` text,
+  `cAdd1` varchar(64) default NULL,
+  `cAdd2` varchar(64) default NULL,
+  `cAdd3` varchar(64) default NULL,
+  `cIsVIP` char(1) default '0',
+  `cVIPNum` varchar(32) default NULL,
+  `cVIPVDate` varchar(32) default NULL,
+  `cVIPEDate` varchar(32) default NULL,
+  `cSbmBy` varchar(32) default NULL,
+  `cMake` varchar(64) default NULL,
+  `cModel` varchar(64) default NULL,
+  `cIMEI` varchar(32) default NULL,
+  PRIMARY KEY  (`iID`),
+  UNIQUE KEY `cName` (`cName`,`cEmail`,`cVIPNum`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbdeal`
+-- 
+
+CREATE TABLE `tbdeal` (
+  `iID` int(4) unsigned NOT NULL auto_increment,
+  `cStatus` varchar(32) NOT NULL default 'normal',
+  `cLogin` varchar(32) NOT NULL default '',
+  `cPasswd` varchar(32) default NULL,
+  `cName` varchar(64) NOT NULL default '',
+  `cAdd` varchar(128) default NULL,
+  `cMailAdd` varchar(128) default NULL,
+  `cEmail` varchar(128) NOT NULL default '',
+  `cContact` varchar(128) NOT NULL default '',
+  `cPerson` varchar(64) default NULL,
+  `cDesc` varchar(128) default NULL,
+  `cVIP` varchar(16) default '',
+  PRIMARY KEY  (`iID`),
+  UNIQUE KEY `cLogin` (`cLogin`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbdecart`
+-- 
+
+CREATE TABLE `tbdecart` (
+  `iID` int(4) NOT NULL auto_increment,
+  `cRef` varchar(16) NOT NULL default '',
+  `dtDate` date NOT NULL default '0000-00-00',
+  `cDID` int(4) NOT NULL default '0',
+  `cDName` varchar(64) NOT NULL default '',
+  `fPrice` float NOT NULL default '0',
+  `iCB` float NOT NULL default '0',
+  PRIMARY KEY  (`iID`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbdecartitems`
+-- 
+
+CREATE TABLE `tbdecartitems` (
+  `iID` int(4) NOT NULL auto_increment,
+  `cRef` varchar(16) NOT NULL default '',
+  `cType` varchar(8) NOT NULL default '',
+  `iPID` int(4) NOT NULL default '0',
+  `cModel` varchar(32) NOT NULL default '',
+  `cImg` varchar(32) NOT NULL default '',
+  `cPrice` float default '0',
+  `iQty` int(4) NOT NULL default '0',
+  PRIMARY KEY  (`iID`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbdiscpsw`
+-- 
+
+CREATE TABLE `tbdiscpsw` (
+  `iID` int(4) NOT NULL auto_increment,
+  `cPsw` varchar(32) NOT NULL default '',
+  `cDesc` varchar(255) default NULL,
+  PRIMARY KEY  (`iID`),
+  UNIQUE KEY `cPsw` (`cPsw`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbdo`
+-- 
+
+CREATE TABLE `tbdo` (
+  `iID` int(4) NOT NULL auto_increment,
+  `dtDate` date default NULL,
+  `iDID` int(4) default NULL,
+  `cName` varchar(128) default NULL,
+  `cAdd` varchar(128) default NULL,
+  `cItemQty` char(2) default NULL,
+  PRIMARY KEY  (`iID`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbdodetail`
+-- 
+
+CREATE TABLE `tbdodetail` (
+  `iID` int(4) NOT NULL auto_increment,
+  `iDoID` int(4) NOT NULL default '0',
+  `cJN` varchar(8) NOT NULL default '',
+  `cMake` varchar(128) default NULL,
+  `cModel` varchar(128) default NULL,
+  `cIMEI` varchar(128) default NULL,
+  `fSrvChg` decimal(9,2) default NULL,
+  PRIMARY KEY  (`iID`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbinv_dtl`
+-- 
+
+CREATE TABLE `tbinv_dtl` (
+  `iID` int(4) unsigned NOT NULL auto_increment,
+  `cYear` varchar(4) NOT NULL default '',
+  `cMonth` varchar(4) NOT NULL default '',
+  `cSbm` varchar(128) NOT NULL default '',
+  `cSbmBy` varchar(128) NOT NULL default '',
+  `iSbmType` tinyint(1) default '1',
+  `cJN` varchar(16) NOT NULL default '',
+  `cStatus` varchar(16) default NULL,
+  `dtSDate` date default NULL,
+  `dtCDate` date default NULL,
+  `cSrvChg` decimal(9,2) default '0.00',
+  `cIIFP` varchar(32) default NULL,
+  `cIsWrty` varchar(32) default NULL,
+  `cIsCmmisn` varchar(32) default NULL,
+  PRIMARY KEY  (`iID`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbinv_pay`
+-- 
+
+CREATE TABLE `tbinv_pay` (
+  `iID` int(4) unsigned NOT NULL auto_increment,
+  `cType` tinyint(1) NOT NULL default '0',
+  `cYear` varchar(4) default NULL,
+  `cMonth` varchar(4) default NULL,
+  `cSbm` varchar(32) NOT NULL default '',
+  `cSbmBy` varchar(128) default NULL,
+  `dtDate` date default NULL,
+  `cSrvChg` decimal(9,2) default '0.00',
+  `cCmmisn` decimal(9,2) default '0.00',
+  `cPaid` decimal(9,2) default '0.00',
+  `cRef` text,
+  PRIMARY KEY  (`iID`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbinv_swch`
+-- 
+
+CREATE TABLE `tbinv_swch` (
+  `cYear` varchar(4) NOT NULL default '',
+  `cMonth` varchar(4) NOT NULL default ''
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbjn`
+-- 
+
+CREATE TABLE `tbjn` (
+  `iID` tinyint(1) NOT NULL default '0',
+  `iJN` int(6) unsigned zerofill NOT NULL default '000000'
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbmemb`
+-- 
+
+CREATE TABLE `tbmemb` (
+  `iID` int(4) unsigned NOT NULL auto_increment,
+  `iType` tinyint(1) unsigned NOT NULL default '0',
+  `cLogin` varchar(24) NOT NULL default '',
+  `cPsw` varchar(24) NOT NULL default '',
+  `cName` varchar(24) NOT NULL default '',
+  `cEmail` varchar(64) NOT NULL default '',
+  `cMemo` varchar(128) default NULL,
+  `dDate` date NOT NULL default '0000-00-00',
+  PRIMARY KEY  (`iID`),
+  UNIQUE KEY `cLogin` (`cLogin`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbmemo`
+-- 
+
+CREATE TABLE `tbmemo` (
+  `iID` int(4) NOT NULL auto_increment,
+  `cJN` varchar(8) default NULL,
+  `cAuthType` varchar(16) NOT NULL default '',
+  `cAuth` varchar(128) NOT NULL default '',
+  `cAuthContact` varchar(64) default NULL,
+  `dtDate` datetime NOT NULL default '0000-00-00 00:00:00',
+  `cTitle` varchar(128) default NULL,
+  `cContent` text,
+  `cIsRead` varchar(16) default NULL,
+  PRIMARY KEY  (`iID`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbopr`
+-- 
+
+CREATE TABLE `tbopr` (
+  `iID` int(5) unsigned NOT NULL auto_increment,
+  `cLogin` varchar(32) NOT NULL default '',
+  `cPsw` varchar(32) NOT NULL default '',
+  `cStatus` varchar(16) NOT NULL default 'normal',
+  `cName` varchar(32) NOT NULL default '',
+  `cEmail` varchar(64) default NULL,
+  `cContact` varchar(64) default NULL,
+  PRIMARY KEY  (`iID`),
+  UNIQUE KEY `cLogin` (`cLogin`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbphone`
+-- 
+
+CREATE TABLE `tbphone` (
+  `iID` int(4) NOT NULL auto_increment,
+  `iShowIndex` tinyint(1) NOT NULL default '0',
+  `cBrand` varchar(32) NOT NULL default '',
+  `cModel` varchar(32) NOT NULL default '',
+  `cPC` varchar(32) default NULL,
+  `cNetwork` varchar(64) default '',
+  `cSize` varchar(64) default '',
+  `cWeight` varchar(64) default '',
+  `cDisplay` varchar(64) default '',
+  `cRT` varchar(64) default '',
+  `cMem` varchar(64) default '',
+  `cFeature` text,
+  `cBattery` varchar(64) default '',
+  `cStandby` varchar(32) default '',
+  `cTTime` varchar(32) default '',
+  `cPrice1` varchar(32) default '',
+  `cPrice2` varchar(32) default '',
+  `cInStk` varchar(32) default NULL,
+  `cWrty` varchar(64) default NULL,
+  `cImg` varchar(32) NOT NULL default '',
+  `dtDate` date NOT NULL default '0000-00-00',
+  `cIs3G` varchar(8) default NULL,
+  PRIMARY KEY  (`iID`),
+  FULLTEXT KEY `cBrand` (`cBrand`,`cModel`,`cFeature`,`cIs3G`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbrepair`
+-- 
+
+CREATE TABLE `tbrepair` (
+  `iID` int(5) unsigned NOT NULL auto_increment,
+  `cJN` varchar(9) NOT NULL default '',
+  `cStatus` varchar(64) NOT NULL default '',
+  `cLocation` varchar(64) NOT NULL default '',
+  `cAssign` varchar(32) default NULL,
+  `dtSDate` date NOT NULL default '0000-00-00',
+  `iSbmType` tinyint(1) unsigned NOT NULL default '0',
+  `cSbm` varchar(32) NOT NULL default '',
+  `cSbmBy` varchar(128) default NULL,
+  `cStfName` varchar(64) default NULL,
+  `cSrvChg` varchar(32) default NULL,
+  `cIIFP` varchar(64) default NULL,
+  `cIsWrty` varchar(64) default NULL,
+  `dtECDate` date default NULL,
+  `dtCDate` date default NULL,
+  `dtPDate` date default NULL,
+  `cCName` varchar(64) NOT NULL default '',
+  `cCLastName` varchar(64) default NULL,
+  `cCHomePhn` varchar(64) NOT NULL default '',
+  `cCAdd1` varchar(64) default NULL,
+  `cCAdd2` varchar(64) default NULL,
+  `cCAdd3` varchar(64) default NULL,
+  `cCWorkPhn` varchar(64) default NULL,
+  `cCFax` varchar(64) default NULL,
+  `cCEmail` varchar(64) default NULL,
+  `fCChgLmt` float default NULL,
+  `cFUD1` varchar(32) default NULL,
+  `cFUD2` varchar(32) default NULL,
+  `cFUD3` varchar(32) default NULL,
+  `cFUD4` varchar(32) default NULL,
+  `cFUD5` varchar(32) default NULL,
+  `cMake` varchar(32) NOT NULL default '',
+  `cModel` varchar(32) NOT NULL default '',
+  `cIMEI` varchar(32) NOT NULL default '',
+  `cFUDFax` varchar(32) default NULL,
+  `cA1` varchar(32) default NULL,
+  `cA2` varchar(32) default NULL,
+  `cA3` varchar(32) default NULL,
+  `cAother` varchar(32) default NULL,
+  `cFCS1` varchar(32) default NULL,
+  `cFCS2` varchar(32) default NULL,
+  `cFCS3` varchar(32) default NULL,
+  `cFCS4` varchar(32) default NULL,
+  `cFCS5` varchar(32) default NULL,
+  `cFCS6` varchar(32) default NULL,
+  `cFCS7` varchar(32) default NULL,
+  `cFCS8` varchar(32) default NULL,
+  `cFCD1` varchar(32) default NULL,
+  `cFCD2` varchar(32) default NULL,
+  `cFCD3` varchar(32) default NULL,
+  `cFCM1` varchar(32) default NULL,
+  `cFCM2` varchar(32) default NULL,
+  `cFCM3` varchar(32) default NULL,
+  `cFCM4` varchar(32) default NULL,
+  `cFCM5` varchar(32) default NULL,
+  `cFCM6` varchar(32) default NULL,
+  `cFCM7` varchar(32) default NULL,
+  `cFCM8` varchar(32) default NULL,
+  `cFCP1` varchar(32) default NULL,
+  `cFCP2` varchar(32) default NULL,
+  `cFCP3` varchar(32) default NULL,
+  `cFCP4` varchar(32) default NULL,
+  `cFCG1` varchar(32) default NULL,
+  `cFCG2` varchar(32) default NULL,
+  `cFCG3` varchar(32) default NULL,
+  `cFCG4` varchar(32) default NULL,
+  `cFCG5` varchar(32) default NULL,
+  `cFCG6` varchar(32) default NULL,
+  `cFCG7` varchar(32) default NULL,
+  `cFCG8` varchar(32) default NULL,
+  `cFCG9` varchar(32) default NULL,
+  `cFCU1` varchar(32) default NULL,
+  `cFCU2` varchar(32) default NULL,
+  `cFCU3` varchar(32) default NULL,
+  `cFCDesc` text,
+  `cLMake` varchar(32) default NULL,
+  `cLModel` varchar(32) default NULL,
+  `cLDeposit` varchar(32) default NULL,
+  `cLIMEI` varchar(32) default NULL,
+  `cLB` varchar(32) default NULL,
+  `cLC` varchar(32) default NULL,
+  `cLother` varchar(32) default NULL,
+  `cFBScale` tinyint(1) unsigned default NULL,
+  `cFBTell` tinyint(1) unsigned default NULL,
+  `cFBDesc` varchar(128) default NULL,
+  `cSrvReport` text,
+  `cStsOnReport` varchar(128) default NULL,
+  `cDiscType` int(4) NOT NULL default '0',
+  `prc` varchar(32) default NULL,
+  `amt` varchar(32) default NULL,
+  `cCost` varchar(32) default NULL,
+  `cDP` varchar(32) default NULL,
+  `cDPDesc` varchar(255) default NULL,
+  `cMemo` text,
+  `cMemoReply` text,
+  `cIsReplyRead` varchar(7) default NULL,
+  `cIsReplyRead2` varchar(7) default NULL,
+  `cRemark` text,
+  `cIsCmmisn` varchar(32) default NULL,
+  `cAgentID` varchar(4) default NULL,
+  `cAgentName` varchar(128) default NULL,
+  PRIMARY KEY  (`iID`),
+  UNIQUE KEY `cJN` (`cJN`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbtech`
+-- 
+
+CREATE TABLE `tbtech` (
+  `iID` int(4) unsigned NOT NULL auto_increment,
+  `cStatus` varchar(32) NOT NULL default 'normal',
+  `cLogin` varchar(32) NOT NULL default '',
+  `cPasswd` varchar(32) NOT NULL default '',
+  `cName` varchar(32) NOT NULL default '',
+  `cEmail` varchar(64) default NULL,
+  `cContact` varchar(64) default NULL,
+  PRIMARY KEY  (`iID`),
+  UNIQUE KEY `cLogin` (`cLogin`)
+);
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `tbuser`
+-- 
+
+CREATE TABLE `tbuser` (
+  `iID` int(4) unsigned NOT NULL auto_increment,
+  `cLogin` varchar(48) NOT NULL default '',
+  `cName` varchar(48) NOT NULL default '',
+  `cPsw` varchar(48) NOT NULL default '',
+  `cEmail` varchar(128) NOT NULL default '',
+  PRIMARY KEY  (`iID`),
+  UNIQUE KEY `cLogin` (`cLogin`)
+);

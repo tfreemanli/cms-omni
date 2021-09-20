@@ -1,0 +1,271 @@
+@CHARSET "UTF-8";
+
+/******** initial  ********/
+body {
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	margin: 0;
+	padding: 0;
+}
+
+div, ul, li, span, h1, h2, h3, h4, h5, dl, dt, dd, p {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border: 1px solid #333;
+}
+
+th {
+	text-align: center;
+	color: #fff;
+	height: 22px;
+}
+
+td {
+	text-indent: 5px;
+	border: 1px solid #ccc;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	display: block;
+	border: none;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-top: 3px;
+	margin-bottom: 10px;
+}
+
+a {
+	color: blue;
+	text-decoration:none;
+}
+
+a:hover {
+	color: red;
+}
+
+.right {
+	float: right;
+}
+
+.red {
+	color: red;
+}
+
+.tb-noborder {
+	border: none;
+}
+
+#wrapper {
+	margin: 0 auto;
+	min-width: 900px;
+	text-align: left;
+	background: url('../images/main_bg.jpg') repeat-y;
+}
+
+
+
+/********* header ********/
+#top {
+	background: #333 url('../images/header_bg.jpg') repeat-x;
+	height: 84px;
+}
+
+#logo {
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+#earth {
+	float: right;
+	margin-right: 20px;
+}
+
+#help_link {
+	float: right;
+	margin-top: 64px;
+	margin-right: -91px;
+}
+
+#help_link li {
+	float: left;
+	background: url('../images/btn_bg.jpg') repeat-x;
+	font-size: 0.75em;
+	margin-left: 1px;
+}
+
+#help_link li a {
+	display: block;
+	padding: 3px 7px;
+	color: #333;
+}
+
+#help_link li a:hover {
+	color: red;
+}
+
+#top_bar {
+	background: #cadb2a url('../images/bar_bg.jpg') repeat-x;
+	margin: 0 10px;
+}
+
+#userCtrl {
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+
+
+/******** content **********/
+#main {
+	min-height: 300px;
+	margin: 5px auto;
+	width: 95%;
+}
+
+/* login */
+#login {
+	margin: 50px auto;
+	width: 160px;
+	border: 1px solid #ccc;
+	padding: 15px;
+}
+
+.err_msg {
+	color: red;
+	text-align: center;
+}
+
+/* side bar */
+#sidebar {
+	float: left;
+	width: 200px;
+}
+
+#sidebar  li {
+	font-size: 1.2em;
+	margin-top: 15px;
+}
+
+#sidebar li a {
+	display: block;
+	width: 150px;
+	padding:  5px 7px;
+	border: 1px solid #333;
+	color: #333;
+	font-weight: bold;
+	background: #cadb2a;
+}
+
+#sidebar li a:hover {
+	color: red;
+	text-decoration: underline;
+	
+}
+
+#search_form {
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	width: 150px;
+	padding: 7px;
+}
+
+/* main content */
+#mainContent {
+	float: left;
+	padding: 15px;
+	width: 73%;
+}
+
+#mainContent h3 {
+	padding: 5px 0;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+
+#mainContent h4 {
+	padding: 5px 0;
+	color: blue;
+}
+
+#mainContent th {
+	background:url("../images/header_bg.jpg") 0 -7px repeat-x;
+}
+
+.tb_title {
+	font-weight: bold;
+	background: #ccc;
+}
+
+/* operation controlloer */
+.operation li {
+	float: left;
+	margin: 0 7px;
+}
+
+.view_block {
+	margin-bottom: 15px;
+}
+
+/* remark */
+.remark_row {
+	border: 1px solid #ccc;
+	margin-bottom: 5px;
+}
+
+.remark_name {
+	border-bottom: 1px solid #ccc;
+	background: #ccc;
+	padding: 3px 5px;
+}
+
+.remark_content {
+	padding: 5px;
+}
+
+#remark_form {
+	border: 1px solid #ccc;
+	padding: 0 15px;
+}
+
+/* page nav */
+.pageNav {
+	margin: 20px 0;
+}
+
+.pageNav span {
+	margin-right: 10px;
+}
+
+/* calander botton */
+#date_btn {
+	display: inline;
+	position: relative;
+	bottom: -7px;
+}
+
+
+
+/********* footer ********/
+#footer {
+	background: #fff url('../images/footer_bg.jpg') repeat-x;
+	*background: #fff url('../images/footer_bg.jpg') 0 5px repeat-x; /*ie hack*/
+}
+
+#footer_logo {
+	float: right;
+	margin-right: 25px;
+}

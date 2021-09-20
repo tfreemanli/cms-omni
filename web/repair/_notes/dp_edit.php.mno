@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rs" value="name:iID;datatype:int,name:cStatus;datatype:string,name:cLogin;datatype:string,name:cPasswd;datatype:string,name:cName;datatype:string,name:cAdd;datatype:string,name:cEmail;datatype:string,name:cContact;datatype:string,name:cPerson;datatype:string,name:cDesc;datatype:string" />
+</info>

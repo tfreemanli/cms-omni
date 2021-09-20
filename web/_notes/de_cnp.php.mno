@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RS_dealer" value="name:iID;datatype:int,name:cStatus;datatype:string,name:cLogin;datatype:string,name:cPasswd;datatype:string,name:cName;datatype:string,name:cAdd;datatype:string,name:cEmail;datatype:string,name:cContact;datatype:string,name:cPerson;datatype:string,name:cDesc;datatype:string,name:cVIP;datatype:string" />
+	<infoitem key="UD_RS_paid" value="name:iID;datatype:int,name:cType;datatype:int,name:cYear;datatype:string,name:cMonth;datatype:string,name:cSbm;datatype:string,name:cSbmBy;datatype:string,name:dtDate;datatype:date,name:cSrvChg;datatype:real,name:cCmmisn;datatype:real,name:cPaid;datatype:real,name:cRef;datatype:blob,name:dtFmDate;datatype:string" />
+</info>

@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>OmniTech</title>
+<!-- TemplateEndEditable --><link href="../css.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+</head>
+
+<body>
+<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="378"><img src="../images/logo_simple.gif" width="378" height="92"></td>
+    <td width="402" bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+</table>
+<table width="780" border="0" align="center" cellpadding="0" cellspacing="0" background="../images/menu_btm.gif">
+  <tr>
+    <td><img src="../images/1x1.gif" width="1" height="8"></td>
+  </tr>
+</table>
+<table width="780" height="44" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="236" align="center"><?php include('./inc_sch.php');?>
+    </td>
+    <td width="544" align="center">&nbsp;</td>
+  </tr>
+</table>
+<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr bgcolor="#CCCCCC">
+    <td valign="top"><img src="../images/1x1.gif" width="1" height="5"></td>
+  </tr>
+  <tr>
+    <td valign="top"><!-- TemplateBeginEditable name="main" --><!-- TemplateEndEditable --></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

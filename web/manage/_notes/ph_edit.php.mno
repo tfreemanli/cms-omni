@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RS1" value="name:iID;datatype:int,name:cBrand;datatype:string,name:cModel;datatype:string,name:cPC;datatype:string,name:cNetwork;datatype:string,name:cSize;datatype:string,name:cWeight;datatype:string,name:cDisplay;datatype:string,name:cRT;datatype:string,name:cMem;datatype:string,name:cFeature;datatype:blob,name:cBattery;datatype:string,name:cStandby;datatype:string,name:cTTime;datatype:string,name:cPrice1;datatype:string,name:cPrice2;datatype:string,name:cInStk;datatype:string,name:cWrty;datatype:string,name:cImg;datatype:string,name:dtDate;datatype:date" />
+</info>

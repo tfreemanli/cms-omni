@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rs_all" value="name:iID;datatype:int,name:cName;datatype:string,name:cLastName;datatype:string" />
+	<infoitem key="UD_rs_note" value="name:iID;datatype:int,name:IsPaid;datatype:string,name:cNote;datatype:blob" />
+</info>

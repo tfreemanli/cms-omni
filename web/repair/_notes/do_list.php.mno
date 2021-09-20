@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_do" value="name:iID;datatype:int,name:iDID;datatype:int,name:cName;datatype:string,name:cAdd;datatype:string,name:cItemQty;datatype:string" />
+</info>
