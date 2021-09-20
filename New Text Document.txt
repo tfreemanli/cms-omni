@@ -1,2 +1,6 @@
 Edited in the NewBrch. M as Modified.
 Edited again after 'Staged', me is showed in 'Staged' and 'Changes' column. M as Modified.
+	[Working Tree means WorkingArea; Index means Stage; so I guess C means Commit]
+
+'Commit Staged' clicked. There isn't anything like C, but a hash commit node :P
+And Working Tree copy is still maked as M. In Timeline, it's showed as 'Uncommited Changes', above of previous commit.
