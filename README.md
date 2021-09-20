@@ -7,3 +7,5 @@ Apache 2.2
 Apache 2.2
 PHP 5.2
 MySQL 5
+
+# after merge, origin repo and workspace has been updated to what I've merged, but the local repo has not.
